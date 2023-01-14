@@ -13,6 +13,7 @@ body {
   width: 1312px;
   margin: 0 auto;
   border: 2px solid rgb(120, 120, 120);
+  background: #ffffff;
 }
 img {
   width: 100%;
@@ -21,6 +22,10 @@ img {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+.main {
+  width: 90%;
+  margin: 00 auto;
 }
 /* Navigation Bar */
 .navigation-bar {
@@ -106,4 +111,99 @@ img {
 }
 .company-logos .logo {
   width: 90%;
+}
+
+/* -------------------
+    Product Section
+------------------- */
+.product-section {
+  width: 95%;
+  margin: 00 auto;
+}
+.see-more {
+  text-align: right;
+}
+.see-more a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 0;
+  color: var(--hotpink);
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--deepgrey);
+  text-align: center;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.product {
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 20px;
+}
+.product-details {
+  margin-top: 16px;
+}
+.product-details h2 {
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.price {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.719);
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.product-review i {
+  color: #fb8200;
+  margin-bottom: 10px;
+}
+.product-details p {
+  font-weight: 700;
+  font-size: 14px;
+  color: #787885;
+}
+/* -----------------
+  Additional Section
+-------------------- */
+.additional-section {
+}
+.additional-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.additional-image {
+  width: 40%;
+}
+.additional-content {
+  width: 52%;
+}
+.additional-title {
+  font-weight: 700;
+  font-size: 38px;
+  margin-bottom: 16px;
+}
+.additional-para {
+  font-weight: 700;
+  font-size: 16px;
+  color:#6C6C6C;
+  margin-bottom: 16px;
+}
+.additional-btn{
+  text-decoration: none;
+  color: white;
+  background-color: var(--hotpink);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  display: inline-block;
 }
