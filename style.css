@@ -1,5 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,500&display=swap");
+:root {
+  --deepgrey: #3a3a3a;
+  --hotpink: #e02c6d;
+}
 
-body{
-    background-color: rgb(201, 70, 70);
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 1312px;
+  margin: 0 auto;
+  border: 2px solid rgb(120, 120, 120);
+}
+img {
+  width: 100%;
+}
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+/* Navigation Bar */
+.navigation-bar {
+  /* background-color: lightpink; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.company-name h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+.menu a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 34px;
+  color: black;
+}
+/* ------------------
+    banner section
+----------------- */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-content {
+  width: 45%;
+}
+.banner-content h1 {
+  font-weight: 700;
+  font-size: 52px;
+  color: var(--deepgrey);
+}
+.banner-content p {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--deepgrey);
+  margin-bottom: 16px;
+}
+.banner-btn {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background-color: var(--hotpink);
+}
+.banner-image {
+  width: 40%;
+  height: 471px;
+  background: url("./assets/images/Circle\ design.svg") no-repeat;
+  background-size: cover;
+}
+.banner-image img {
+  width: 100%;
+}
+.banner-website-logos {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 70px;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      #93a8a8,
+      rgba(255, 255, 255, 0)
+    )
+    1;
+  padding: 20px;
+}
+.company-logos {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  column-gap: 2rem;
+  justify-content: center;
+}
+.company-logos .logo {
+  width: 90%;
 }
